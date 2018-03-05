@@ -1,0 +1,14 @@
+{
+    "name": "css-grid-cvs",
+    "version": "1.0.0",
+    "description": "List of CVs with css grid",
+    "scripts": {
+      "lite": "lite-server --port 10001",
+      "start": "npm run lite"
+    },
+    "author": "Mauro Petrini",
+    "license": "MIT",
+    "devDependencies": {
+      "lite-server": "^1.3.1"
+    }
+ }

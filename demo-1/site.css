@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background:#fff;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 660px;
+    grid-template-rows: 250px auto auto;
+}
+
+.logo {
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+.logo img {
+    border-radius: 100px;
+}
+
+.logo,
+.me {
+    align-self: center;
+}
+
+.me {
+    justify-self: left;
+}
+
+.me h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.me h2 {
+    font-size: 1.1em;
+    color: #CDB34E;
+}
+
+.info {
+    grid-column: 1 / 2;
+    background-color:#F7F4EA; 
+    padding: 20px;
+}
+
+.info p:first-child {
+    text-align: justify;
+    color: #BBA347;
+    margin-bottom: 2.5em;
+}
+
+.title {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.title > h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.underline {
+    width: 50%;
+    height: 1px;
+    display: block;
+    margin-top: 5px;
+    background-color: #CDB34E;
+}
+
+.contact-details h3{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 0.75em;
+    padding-left: 4px;
+}
+
+.contact-details p {
+    margin-top: 5px;
+}
+
+.contact-details p span{
+    display: block;
+    padding: 3px 8px;
+}
+
+.me, .jobs .title {
+    margin-left: 2em;
+}
+
+.jobs .title {
+    padding-top: 20px;
+}
