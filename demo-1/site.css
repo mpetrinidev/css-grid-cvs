@@ -1,8 +1,16 @@
+:root {
+    --defaultFontColor: #A2A2A2;
+    --mainBackgroundColor: #1d1d1d;
+    --secondBackgroundColor: #212121;
+    --mainSubtitleColor: #BBA347;
+    --mainTitleColor: whitesmoke;
+}
+
 body {
     font-family: 'Lato', sans-serif;
-    background:#1d1d1d;
+    background: var(--mainBackgroundColor);
     font-size: 1em;
-    color: whitesmoke;
+    color: var(--defaultFontColor);
 }
 
 h1,
@@ -12,10 +20,25 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto Condensed', sans-serif;
+    color: var(--mainTitleColor);
 }
 
-strong{
+strong {
     font-weight: bold;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 2em;
+}
+
+p,
+ul {
+    margin-top: .5em;
+}
+
+li {
+    padding: 1px 0;
 }
 
 .container {
@@ -24,7 +47,7 @@ strong{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 350px 660px;
-    grid-template-rows: 250px auto auto;
+    grid-template-rows: 250px repeat(3, auto);
 }
 
 .logo {
@@ -58,14 +81,16 @@ strong{
 
 .info {
     grid-column: 1 / 2;
-    background-color:#212121; 
-    padding: 20px;
+    grid-row-end: span 1;
+    background-color: var(--secondBackgroundColor);
+    padding: 1.25em;
 }
 
 .info p:first-child {
     text-align: justify;
-    color: #BBA347;
-    margin-bottom: 2.5em;
+    color: var(--mainSubtitleColor);
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .title {
@@ -73,7 +98,7 @@ strong{
     margin-bottom: 1em;
 }
 
-.title > h2 {
+.title h2 {
     font-size: 1.75em;
     font-weight: bold;
     padding-bottom: 5px;
@@ -84,10 +109,10 @@ strong{
     height: 1px;
     display: block;
     margin-top: 5px;
-    background-color: #CDB34E;
+    background-color: var(--mainSubtitleColor);
 }
 
-.contact-details h3{
+.contact-details h3 {
     font-weight: bold;
     font-size: 1.1em;
     margin-top: 0.75em;
@@ -98,16 +123,134 @@ strong{
     margin-top: 5px;
 }
 
-.contact-details p span{
-    color: #A2A2A2;
+.contact-details p span {
     display: block;
     padding: 3px 8px;
 }
 
-.me, .jobs .title {
+a {
+    color: var(--defaultFontColor);
+    text-decoration: none;
+}
+
+.me,
+.content,
+.separator {
     margin-left: 2em;
 }
 
-.jobs .title {
-    padding-top: 20px;
+.content {
+    grid-column: 2 / 3;
+    margin-bottom: 2em;
+}
+
+.title {
+    padding-top: 1.25em;
+    margin-bottom: 2em;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1em;
+}
+
+.job .date,
+.school .date {
+    grid-column: 1 / 2;
+    font-style: italic;
+    align-self: center;
+}
+
+.job-description {
+    grid-column: 2 / 3;
+}
+
+.job-title,
+.school-title {
+    grid-column: 2 / 3;
+    font-size: 1.5em;
+}
+
+.job-company,
+.school-description {
+    font-style: italic;
+    color: var(--mainSubtitleColor);
+    font-size: 1.05em;
+    padding-bottom: .3em;
+}
+
+.separator {
+    height: 1.2px;
+    border-radius: 5px;
+    background: var(--secondBackgroundColor);
+}
+
+.separator,
+.skills,
+.education,
+.school-description {
+    grid-column: 2 / 3;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 100px auto 100px auto;
+    grid-gap: 0.5em;
+}
+
+.skills-content span {
+    align-self: center;
+}
+
+progress {
+    display: block;
+    border: 1px solid var(--mainSubtitleColor);
+    background: var(--secondBackgroundColor);
+    border-radius: 5px;
+    height: 1em;
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 5px;
+    background: var(--mainSubtitleColor);
+}
+
+.school {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1em;
+}
+
+.job,
+.school {
+    margin-bottom: 2em;
+}
+
+.job:last-child,
+.school:last-child {
+    margin-bottom: 0;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.hobby img {
+    height: 64px;
+    width: 64px;
+}
+
+.hobby span {
+    margin-top: 0.5em;
+    display: block;
 }
