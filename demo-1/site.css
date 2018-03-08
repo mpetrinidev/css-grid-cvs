@@ -82,11 +82,14 @@ li {
 .info {
     grid-column: 1 / 2;
     grid-row: 2 / 8;
+}
+
+.info-content {
     background-color: var(--secondBackgroundColor);
     padding: 1.25em;
 }
 
-.info p:first-child {
+.info-content p:first-child {
     text-align: justify;
     color: var(--mainSubtitleColor);
     margin-top: 0;
@@ -306,7 +309,7 @@ progress::-webkit-progress-value {
         grid-row: 3 / 4;
         margin-top: 1em;
     }
-    .info>.title {
+    .info-content >.title {
         display: none;
     }
     .contact-details {
