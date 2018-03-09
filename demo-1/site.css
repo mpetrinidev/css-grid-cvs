@@ -242,7 +242,7 @@ a {
 .skills-content {
     display: grid;
     grid-template-columns: 100px auto 100px auto;
-    grid-gap: 0.5em;
+    grid-gap: 0.75em 0.5em;
 }
 
 .skills-content span {
@@ -288,6 +288,8 @@ progress::-webkit-progress-value {
     grid-template-columns: repeat(4, auto);
     justify-items: center;
     align-items: center;
+    text-align: center;
+    grid-row-gap: 2em;
 }
 
 .hobby img {
