@@ -2,7 +2,7 @@
     --defaultFontColor: #A2A2A2;
     --mainBackgroundColor: #1d1d1d;
     --secondBackgroundColor: #212121;
-    --mainSubtitleColor: #BBA347;
+    --mainSubtitleColor: #CDB34E;
     --mainTitleColor: whitesmoke;
 }
 
@@ -56,7 +56,10 @@ li {
 }
 
 .logo img {
-    border-radius: 100px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .logo,
@@ -76,7 +79,7 @@ li {
 
 .me h2 {
     font-size: 1.1em;
-    color: #CDB34E;
+    color: var(--mainSubtitleColor);
 }
 
 .info {
@@ -84,7 +87,8 @@ li {
     grid-row: 2 / 8;
 }
 
-.info-content {
+.info-content,
+.social-content {
     background-color: var(--secondBackgroundColor);
     padding: 1.25em;
 }
@@ -94,6 +98,38 @@ li {
     color: var(--mainSubtitleColor);
     margin-top: 0;
     margin-bottom: 1em;
+}
+
+.social-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.social-content .title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.social {
+    color: var(--mainSubtitleColor);
+}
+
+.social a {
+    display: block;
+    text-align: center;
+}
+
+.social a i {
+    font-size: 2em;
+    color: var(--mainSubtitleColor);
+}
+
+.social a span {
+    font-size: 0.8em;
+    margin-top: 0.75em;
+    display: block;
 }
 
 .title {
@@ -291,9 +327,14 @@ progress::-webkit-progress-value {
     .skills-content {
         grid-template-columns: auto auto;
     }
+    .logo {
+        align-self: unset;
+    }
     .me {
         grid-row: 2 / 3;
         justify-self: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .me h1 {
         font-size: 2em;
@@ -307,9 +348,8 @@ progress::-webkit-progress-value {
     }
     .info {
         grid-row: 3 / 4;
-        margin-top: 1em;
     }
-    .info-content >.title {
+    .info-content>.title {
         display: none;
     }
     .contact-details {
@@ -318,6 +358,13 @@ progress::-webkit-progress-value {
         grid-row-gap: 5px;
         align-items: center;
         justify-items: left;
+    }
+    .info-content,
+    .social-content {
+        padding: 1em;
+    }
+    .social a span {
+        font-size: 1em;
     }
     .contact-details h3 {
         margin-top: 0;
