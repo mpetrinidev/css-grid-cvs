@@ -250,7 +250,6 @@ a {
 
 progress {
     display: block;
-    border: 1px solid var(--mainSubtitleColor);
     background: var(--secondBackgroundColor);
     border-radius: 5px;
     height: 1em;
