@@ -62,7 +62,7 @@ li {
 .logo img {
     height: 100%;
     width: 100%;
-    vertical-align: top;
+    object-fit: cover;    
 }
 
 .me h1 {
@@ -249,6 +249,9 @@ progress::-webkit-progress-value {
         max-width: 100%;
         grid-template-columns: 100%;
     }
+    .logo {
+        height: 250px;
+    }
     .logo,
     .info,
     .me,
@@ -301,6 +304,15 @@ progress::-webkit-progress-value {
     }
 }
 
-@media screen and (min-width: 420px) and (max-width:768px) {}
+@media screen and (min-width: 420px) and (max-width:768px) {
+    .container {
+        grid-template-rows: auto;
+    }
+    .logo {
+        height: 350px;
+    }
+}
 
-@media screen and (min-width: 769px) and (max-width:992px) {}
+@media screen and (min-width: 769px) and (max-width:992px) {
+    
+}
