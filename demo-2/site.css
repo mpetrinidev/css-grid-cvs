@@ -62,7 +62,7 @@ li {
 .logo img {
     height: 100%;
     width: 100%;
-    object-fit: cover;    
+    object-fit: cover;
 }
 
 .me h1 {
@@ -314,5 +314,21 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (min-width: 769px) and (max-width:992px) {
-    
+    .container {
+        grid-template-columns: 350px 1fr;
+    }
+    .sidebar {
+        grid-row: 3 / 4;
+    }
+    .skills {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+    .skills-content {
+        grid-template-columns: 100px auto 100px auto;
+        
+    }
+    .hobbies {
+        grid-column: 1 / 4;
+    }
 }
