@@ -19,12 +19,12 @@ Solo CSS, sin javascript! :rocket:
 
 > Plantilla #1 - [Click para ir a la plantilla!](https://mpetrinidev.github.io/css-grid-cvs/demo-1/index.html)
 
-![Demo 1](https://storage.googleapis.com/openscreenshot/M/F/N/BkYqvPNFM.png)
+![Demo 1](images/demo1.png)
 
 
 > Plantilla #2 - [Click para ir a la plantilla!](https://mpetrinidev.github.io/css-grid-cvs/demo-2/index.html)
 
-![Demo 1](https://storage.googleapis.com/openscreenshot/f/K/E/Sk9GdvEKf.png)
+![Demo 2](images/demo2.png)
 
 
 ## Compatibilidad
