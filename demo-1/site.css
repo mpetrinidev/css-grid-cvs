@@ -251,8 +251,15 @@ a {
 progress {
     display: block;
     background: var(--secondBackgroundColor);
+    color: var(--mainSubtitleColor);
     border-radius: 5px;
+    border: none;
     height: 1em;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 5px;
+    background: var(--mainSubtitleColor);
 }
 
 progress::-webkit-progress-bar {

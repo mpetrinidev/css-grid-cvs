@@ -221,8 +221,15 @@ a {
 progress {
     display: block;
     background: #dcdddf;
+    color: var(--primaryColor);
     border-radius: 2px;
+    border: none;
     height: 1em;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 2px;
+    background: var(--primaryColor);
 }
 
 progress::-webkit-progress-bar {
@@ -326,7 +333,6 @@ progress::-webkit-progress-value {
     }
     .skills-content {
         grid-template-columns: 100px auto 100px auto;
-        
     }
     .hobbies {
         grid-column: 1 / 4;
