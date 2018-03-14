@@ -2,7 +2,7 @@
 
 :fire: Plantillas ultra livianas adaptables a versiones de escritorio, tablet y teléfonos móviles para mostrar de manera online tu curriculum :star: :star: :star: :star: :star:. 
 
-Solo CSS, sin javascript! :rocket:
+Solo CSS! :rocket:
 
 > :free: Las plantillas son totalmente gratuitas y se pueden personalizar según desees. 
 
@@ -19,13 +19,17 @@ Solo CSS, sin javascript! :rocket:
 
 > Plantilla #1 - [Click para ir a la plantilla!](https://mpetrinidev.github.io/css-grid-cvs/demo-1/index.html)
 
-![Demo 1](images/demo1.png)
+![Plantilla #1](images/demo1.png)
 
 
 > Plantilla #2 - [Click para ir a la plantilla!](https://mpetrinidev.github.io/css-grid-cvs/demo-2/index.html)
 
-![Demo 2](images/demo2.png)
+![Plantilla #2](images/demo2.png)
 
+
+> Plantilla #3 - [Click para ir a la plantilla!](https://mpetrinidev.github.io/css-grid-cvs/demo-3/index.html)
+
+![Plantilla #3](images/demo3.png)
 
 ## Compatibilidad
 
@@ -40,3 +44,9 @@ Solo CSS, sin javascript! :rocket:
 >[Si este proyecto te ha ayudado, puedes colaborar con una pequeña donación (el valor que desees) a través de este enlace de paypal.](https://www.paypal.me/mpetrinidev)
 
 >Sígueme en twitter [@mpetrinidev](https://www.twitter.com/mpetrinidev) por más novedades
+
+## Créditos
+
+#### Iconos - https://fontawesome.com/
+#### Tipografía - https://fonts.google.com/
+#### Reset CSS - https://meyerweb.com/eric/tools/css/reset/
