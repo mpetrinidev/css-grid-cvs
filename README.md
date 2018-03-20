@@ -38,10 +38,12 @@ Solo CSS! :rocket:
 * Edge >= v.16 | partial >= v.12 <= v.15
 * Safari >= v.10.1
 
-
-![Paypal logo](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)
+<p align="center"> 
+    <img src="https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png">
 
 >[Si este proyecto te ha ayudado, puedes colaborar con una pequeña donación (el valor que desees) a través de este enlace de paypal.](https://www.paypal.me/mpetrinidev)
+</p>
+
 
 >Sígueme en twitter [@mpetrinidev](https://www.twitter.com/mpetrinidev) por más novedades
 
